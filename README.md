@@ -25,7 +25,13 @@ Generates hundreds of Date Variables based on a single Input Date.
     
     [+] As you notice, Daily jobs' scripts will always use ${D_} date variables, Weekly ones will use ${W_} and Monthly ones will use {M_}.
     
-    [+] Hierarchy is maintained in date representation by each job's scripts which means that Daily jobs can use ${D_}, ${W_} & ${M_} variables, Weekly jobs can only use ${W_} & ${M_} variables, and Monthly jobs can only use ${M_} variables.
+    [+] Hierarchy is maintained in date representation by each job's scripts which means that:
+    
+        > Daily jobs can use ${D_}, ${W_} & ${M_} variables.
+        
+        > Weekly jobs can only use ${W_} & ${M_} variables
+        
+        > And Monthly jobs can only use ${M_} variables.
     
     [+] A Unix variable 'JOB_DATE=' is used in the Wrapper which indicates the job's run date:
     
